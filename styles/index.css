@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+ul, p{
+    margin-bottom: 0;
+}
+
+nav{
+    background: #266856;
+    padding: 17px 0;
+    /* position: fixed; */
+    /* top: 0; */
+    width: 100%;
+    z-index: 55;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30;
+    box-shadow: 0px 1px 5px #0000004a;
+}
+.menu a{
+    color: #fff;
+    font-size: 18px;
+}
+.menu a:hover{
+    text-decoration: none;
+}
+.phone{
+    color: #fff;
+    font-size: 22px;
+}
+.phone:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.about{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about h1{
+    margin-bottom: 50px;
+}
+.box{
+    padding: 25px;
+    box-shadow: 0px 1px 5px #0000001f;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    height: 220px;
+}
+.box_img span{
+    font-size: 35px;
+    color: #266856;
+}
+.box_img{
+    margin-bottom: 15px;
+}
+.box_description{
+    color: #266856;
+    font-size: 18px;
+    height: 60px;
+}
+.box_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    background: #266856;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: 0.2s;
+    transform: translateX(-100%);
+}
+.box:hover>.box_text{
+    transform: translateX(0);
+}
+.kinds{
+    background: #266856;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.kinds_img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.kinds_img img{
+    border-radius: 50%;
+}
+.kinds h2{
+    margin-bottom: 50px;
+    color: white;
+}
+.kinds_text{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.kinds_box{
+    margin-bottom: 15px;
+}
+.form{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.form-control{
+    color: #266856;
+    border-color: #266856;
+}
+.form-control::placeholder{
+    color: #2668569c;
+}
+label{
+    color: #266856;
+    font-size: 20px;
+}
+.my_btn{
+    background: #266856;
+    color: #fff;
+    padding: 6px 18px;
+    border: 1px solid #266856;
+}
+.my_btn:hover{
+    background: #fff;
+    color: #266856;
+}
