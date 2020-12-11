@@ -15,9 +15,12 @@
     list-style: none;
     font-family: 'Roboto Regular';
 }
+body{
+    position: relative;
+}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto Black';
-    color: rgba(34, 34, 34, 0.55);
+    color: rgba(34, 34, 34, 0.70);
 }
 ul, p{
     margin-bottom: 0;
@@ -60,9 +63,7 @@ header{
 }
 nav{
     background: #266856;
-    padding: 17px 0;
-    /* position: fixed; */
-    /* top: 0; */
+    padding: 24px 0;
     width: 100%;
     z-index: 55;
 }
@@ -76,14 +77,14 @@ nav{
 }
 .menu a{
     color: #fff;
-    font-size: 20px;
+    font-size: 23px;
 }
 .menu a:hover{
     text-decoration: none;
 }
 .phone{
     color: #fff;
-    font-size: 22px;
+    font-size: 24px;
 }
 .phone span{
     margin-left: 8px;
@@ -93,7 +94,7 @@ nav{
     text-decoration: none;
 }
 .about{
-    padding: 50px 0;
+    padding: 90px 0;
 }
 .about h2{
     margin-bottom: 50px;
@@ -106,7 +107,7 @@ nav{
     display: block;
     width: 35%;
     height: 3px;
-    background: #909090;
+    background: #222222b3;
     margin: 0 0 8px auto;
 }
 .about h2::after{
@@ -114,7 +115,7 @@ nav{
     display: block;
     width: 35%;
     height: 3px;
-    background: #909090;
+    background: #222222b3;
     margin-top: 8px;
 }
 .box{
@@ -125,19 +126,26 @@ nav{
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
-    height: 220px;
+    height: 280px;
+    cursor: pointer;
 }
-.box_img span{
+/* .box_img span{
     font-size: 35px;
-    color: rgba(34, 34, 34, 0.5);
-}
+    color: rgba(34, 34, 34, 0.7);
+} */
 .box_img{
-    margin-bottom: 15px;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 25px;
+}
+.box_img img{
+    width: 100%;
+    height: 100%;
 }
 .box_description{
     font-size: 18px;
     height: 60px;
-    color:  rgba(34, 34, 34, 0.35);
+    color:  rgba(34, 34, 34, 0.45);
 }
 .box_text{
     position: absolute;
@@ -160,7 +168,7 @@ nav{
 }
 .kinds{
     background: #266856;
-    padding: 50px 0;
+    padding: 90px 0;
 }
 .kinds_img{
     width: 120px;
@@ -233,7 +241,7 @@ nav{
     font-size: 30px;
 }
 .form_title{
-    margin-bottom: 50px;
+    margin-bottom: 65px;
     font-size: 40px;
     display: inline-block;
     text-transform: uppercase;
@@ -243,7 +251,7 @@ nav{
     display: block;
     width: 15%;
     height: 3px;
-    background: #909090;
+    background: #222222b3;
     margin: 0 0 8px auto;
 }
 .form_title::after{
@@ -251,20 +259,21 @@ nav{
     display: block;
     width: 15%;
     height: 3px;
-    background: #909090;
+    background: #222222b3;
     margin-top: 8px;
 }
 .form{
-    padding: 60px 0;
+    padding: 90px 0;
 }
 .form-control{
-    border-color: #266856;
-    padding: 9px 15px;
-    border-radius: 10px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.45);
+    padding: 20px 15px;
     height: auto;
 }
 .form-control::placeholder{
-    color:  rgba(34, 34, 34, 0.35);
+    color:  rgba(34, 34, 34, 0.45);
 }
 
 .my_btn{
@@ -279,7 +288,7 @@ nav{
     color: #266856;
 }
 .gallery{
-    padding: 50px 0;
+    padding: 90px 0;
     background: #266856;
 }
 .gallery h2{
@@ -308,26 +317,162 @@ nav{
 .gallery .slide img{
     width: 100%;
 }
-@media screen and (max-width: 992px){
+.footer_top{
+    padding: 90px 0;
+    background: #2c3e50;
+}
+.location_title,
+.numbers_title,
+.social_title{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+.location_text,
+.numbers_text{
+    display: block;
+    color: #fff;
+    font-size: 1.25rem;
+    font-family: 'Roboto Regular';
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.social_networks{
+    width: 70%;
+    margin: 0 auto;
+}
+.social_network{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social_network a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.footer_bottom{
+    background: #1a252f;
+    padding: 1.5rem 0;
+}
+.footer_bottom p{
+    font-size: 80%;
+    font-family: 'Roboto Regular';
+    color: #fff;
+}
+.modal_wrapper{
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    transition: 0.15s linear;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.658);
+    align-items: center;
+    justify-content: center;
+}
+.modal_wrapper.show{
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    opacity: 1;
+}
+.my_modal{
+    width: 50%;
+    background: #fff;
+    padding: 4rem 1rem;
+    position: relative;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-out;
+    transform: translate(0, -50px);
+}
+.my_modal.show{
+    transform: none;
+    display: flex;
+}
+.modal_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal_title{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.modal_img{
+    width: 40%;
+    margin-bottom: 40px;
+}
+.modal_text{
+    font-family: 'Roboto Regular';
+    width: 50%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.modal_img img{
+    width: 100%;
+}
+.modal_close{
+    background: #266856;
+    color: #fff;
+    padding: 9px 18px;
+    border: 1px solid #266856;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.modal_close:hover{
+    background: #fff;
+    color: #266856;
+    text-decoration: none;
+}
+@media screen and (max-width: 1200px){
     .menu a{
-        font-size: 16px;
+        font-size: 21px;
     }
-    .logo img{
-        width: 70px;
-        height: 70px;
-        bottom: -40px;
+    .my_modal{
+        width: 60%;
     }
+}
+@media screen and (max-width: 992px){
     .phone{
-        font-size: 18px;
+        font-size: 22px;
     }
     .form_title::after,
     .form_title::before{
         display: none;
     }
+    .social_networks{
+        width: 40%;
+    }
 }
 @media screen and (max-width: 768px){
     .header_title{
         width: 60%;
+    }
+    .my_modal{
+        width: 80%;
+    }
+    .modal_text{
+        width: 70%;
     }
 }
 @media screen and (max-width: 458px){
@@ -343,5 +488,22 @@ nav{
     .form_title,
     .gallery h2{
         font-size: 30px;
+    }
+    .logo img{
+        width: 70px;
+        height: 70px;
+        bottom: -40px;
+    }
+    .phone{
+        font-size: 18px;
+    }
+    .social_networks{
+        width: 70%;
+    }
+    .modal_text{
+        width: 80%;
+    }
+    .modal_text{
+        width: 100%;
     }
 }
