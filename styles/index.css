@@ -89,6 +89,10 @@ nav{
 .phone span{
     margin-left: 8px;
 }
+.phone img{
+    width: 24px;
+    height: 24px;
+}
 .phone:hover{
     color: #fff;
     text-decoration: none;
@@ -211,16 +215,29 @@ nav{
 }
 .autoplay_arrows{
     margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .autoplay_arrows .slick-prev{
     margin: 0 10px;
-    color: #fff;
-    font-size: 30px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  url('../images/arrow_left.png')no-repeat center center;
 }
 .autoplay_arrows .slick-next{
     margin: 0 10px;
-    color: #fff;
-    font-size: 30px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/arrow_right.png')no-repeat center center;
 }
 .slick-dots{
     display: flex;
@@ -229,16 +246,29 @@ nav{
 }
 .autoplay_2_arrows{
     margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .autoplay_2_arrows .slick-prev{
     margin: 0 10px;
-    color: #fff;
-    font-size: 30px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  url('../images/arrow_left.png')no-repeat center center;
 }
 .autoplay_2_arrows .slick-next{
     margin: 0 10px;
-    color: #fff;
-    font-size: 30px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  url('../images/arrow_right.png')no-repeat center center;
 }
 .form_title{
     margin-bottom: 65px;
@@ -360,6 +390,9 @@ nav{
     height: 100%;
     align-items: center;
     justify-content: center;
+}
+.social_network a img{
+    width: 60%;
 }
 .footer_bottom{
     background: #1a252f;
